@@ -576,3 +576,26 @@ body.light-mode .section-title{
 #topBtn:hover{
     transform:scale(1.1);
     }
+/* LIGHT MODE COMPLETE FIX */
+body.light-mode{
+    background:#ffffff !important;
+    color:#0f172a !important;
+}
+
+body.light-mode .hero{
+    background:#ffffff !important;
+}
+
+body.light-mode .section{
+    background:#ffffff !important;
+}
+
+body.light-mode .navbar{
+    background:#ffffff !important;
+}
+
+body.light-mode .hero-text p,
+body.light-mode .status,
+body.light-mode .contact-text{
+    color:#475569 !important;
+}
