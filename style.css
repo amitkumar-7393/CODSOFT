@@ -126,11 +126,13 @@ header{
 
 /* BUTTONS */
 
+
 .hero-buttons{
     display:flex;
-    gap:20px;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:nowrap;
     margin-top:25px;
-    flex-wrap:wrap;
 }
 
 .btn{
@@ -513,4 +515,23 @@ body.light-mode .section-title{
 
 .hero-text p{
     margin-bottom:15px;
+}
+
+.hero-social{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.hero-social a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-social a:hover{
+    color:#fff;
 }
