@@ -117,3 +117,80 @@ function typeEffect() {
 title.textContent = "";
 
 typeEffect();
+
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        themeBtn.textContent = "☀️";
+    } else {
+        themeBtn.textContent = "🌙";
+    }
+
+});
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const progress =
+    (scrollTop / scrollHeight) * 100;
+
+    document.getElementById("progress-bar").style.width =
+    progress + "%";
+
+});
+window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const progress =
+    (scrollTop / scrollHeight) * 100;
+
+    document.getElementById("progress-bar").style.width =
+    progress + "%";
+
+});
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove",(e)=>{
+
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+
+});
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 1200);
+
+});
