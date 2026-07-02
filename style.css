@@ -535,3 +535,17 @@ body.light-mode .section-title{
 .hero-social a:hover{
     color:#fff;
 }
+.contact-text{
+    color:#94a3b8;
+    margin:10px 0 25px;
+    text-align:center;
+    font-size:15px;
+    line-height:1.6;
+}
+
+.contact-form h3{
+    color:#38bdf8;
+    text-align:center;
+    margin-bottom:10px;
+    font-size:28px;
+    }
